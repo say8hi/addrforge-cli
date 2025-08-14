@@ -6,7 +6,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "addrforge",
-	Short: "Ethereum и Solana vanity-address generator",
+	Short: "Ethereum, Solana, and Sui vanity address generator",
 }
 
 func Execute() error {
@@ -16,4 +16,5 @@ func Execute() error {
 func init() {
 	rootCmd.AddCommand(ethCmd)
 	rootCmd.AddCommand(solCmd)
+	rootCmd.AddCommand(suiCmd)
 }
