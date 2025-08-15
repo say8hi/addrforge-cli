@@ -24,6 +24,64 @@ AddrForge is a fast, multi-threaded CLI tool that generates cryptocurrency addre
 
 ## Installation
 
+### Pre-built Binaries (Recommended)
+
+Download the latest release for your platform from [GitHub Releases](https://github.com/say8hi/addrforge-cli/releases):
+
+#### Linux (amd64/arm64)
+```bash
+# Download and extract
+wget https://github.com/say8hi/addrforge-cli/releases/latest/download/addrforge-linux-amd64.tar.gz
+tar -xzf addrforge-linux-amd64.tar.gz
+chmod +x addrforge
+sudo mv addrforge /usr/local/bin/
+
+# Or for ARM64
+wget https://github.com/say8hi/addrforge-cli/releases/latest/download/addrforge-linux-arm64.tar.gz
+tar -xzf addrforge-linux-arm64.tar.gz
+chmod +x addrforge
+sudo mv addrforge /usr/local/bin/
+```
+
+#### macOS (amd64/arm64)
+```bash
+# Download and extract
+curl -L https://github.com/say8hi/addrforge-cli/releases/latest/download/addrforge-macos-amd64.zip -o addrforge-macos-amd64.zip
+unzip addrforge-macos-amd64.zip
+chmod +x addrforge
+sudo mv addrforge /usr/local/bin/
+
+# Or for Apple Silicon (ARM64)
+curl -L https://github.com/say8hi/addrforge-cli/releases/latest/download/addrforge-macos-arm64.zip -o addrforge-macos-arm64.zip
+unzip addrforge-macos-arm64.zip
+chmod +x addrforge
+sudo mv addrforge /usr/local/bin/
+```
+
+#### Windows (amd64/arm64)
+1. Download the appropriate archive:
+   - [addrforge-windows-amd64.zip](https://github.com/say8hi/addrforge-cli/releases/latest/download/addrforge-windows-amd64.zip)
+   - [addrforge-windows-arm64.zip](https://github.com/say8hi/addrforge-cli/releases/latest/download/addrforge-windows-arm64.zip)
+2. Extract the `addrforge.exe` binary
+3. Add the binary to your PATH or run directly from the extracted folder
+
+### Arch Linux (AUR)
+
+For Arch Linux users, install from the AUR:
+
+```bash
+# Using yay
+yay -S addrforge
+
+# Using paru
+paru -S addrforge
+
+# Manual installation
+git clone https://aur.archlinux.org/addrforge.git
+cd addrforge
+makepkg -si
+```
+
 ### From Source
 
 ```bash
